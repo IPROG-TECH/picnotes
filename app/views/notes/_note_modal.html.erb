@@ -1004,25 +1004,5 @@
       document.getElementById(tabName).style.display = "block";
       evt.currentTarget.className += " active";
   }
-
-  function openReference(tab){
-    var i;
-    var x = document.getElementsByClassName('click-reference');
-    var buttons = document.getElementsByClassName('reference-tab-note');
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = 'none';
-      x[i].style.border = 'thick #FFF solid';
-    }
-    for (i = 0; i < buttons.length; i++) {
-      buttons[i].style.border = 'thin gray solid';
-      buttons[i].style.color = 'gray';
-
-    }
-    document.getElementById(tab).style.display = 'block';
-    document.querySelector(`button[onclick='openReference("${tab}")']`).style.border = 'thin #BC171D solid';
-    document.querySelector(`button[onclick='openReference("${tab}")']`).style.color = '#BC171D';
-
-  }
-  
 </script>
 </div>
